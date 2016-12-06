@@ -5,7 +5,7 @@ First install leiningen
 
 Then on the command line enter     
 
-lein
+lein repl
 
 
 Here is our first function, so type it into lein:
