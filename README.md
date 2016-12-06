@@ -10,14 +10,10 @@ lein
 
 Here is our first function, so type it into lein:
 
-
-
-
-
-(defn  nextrandomnumber [x] (let [a 77 c 44 m 10] (mod (+ (* a x) c) m)))
+(defn  nextrandomnumber [x] (let [a 1664525 c 1013904223 m 4294967296] (mod (+ (* a x) c) m))))
 
    M    A         C
-	232	1664525	1013904223
+	4294967296	1664525	1013904223
 
 
 
