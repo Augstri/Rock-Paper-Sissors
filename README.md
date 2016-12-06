@@ -10,7 +10,18 @@ lein
 
 Here is our first function, so type it into lein:
 
+
+
+
+
 (defn  nextrandomnumber [x] (let [a 77 c 44 m 10] (mod (+ (* a x) c) m)))
+
+   M    A         C
+	232	1664525	1013904223
+
+
+
+
 
 
 to get a random number give it a starting random number:
