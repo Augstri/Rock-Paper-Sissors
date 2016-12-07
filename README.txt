@@ -38,3 +38,6 @@ the first number is n and the second number is the seed number
 
 Game number and player number produces a zero one or two 
 (defn zeroonetwo [n x] (mod (nthrandomnumber n x) 3))
+
+
+ok now we are ready to make the game
