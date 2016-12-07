@@ -61,7 +61,7 @@ ok now we are ready to make the game
                 (if (not (== beat savebeat))
 
                     (let [gamenumber (quot beat 4)] 
-                        
+                      (defn addoneandmod [x] (mod (+ 1 x)3))  
                         (def savebeat beat)
                         
                         (println (format " %s     "  (["ro" "sham" "bo" ""] phase) ))
