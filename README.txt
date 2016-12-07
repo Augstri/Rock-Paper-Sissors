@@ -62,13 +62,20 @@ ok now we are ready to make the game
 
                 (if (not (== beat savebeat))
 
-                    (let [gamenumber (quot beat 4)] 
+                    (let [
+                        gamenumber (quot beat 4)
+                        player1move (zeroonetwo gamenumber player1seed)
+                        player2move (zeroonetwo gamenumber player2seed)
+                        player1win (win player1move player2move)
+                        player2win (win player2move player1move)
+
+                        ] 
                         
                         (def savebeat beat)
                         
                         (println (format " %s     "  (["ro" "sham" "bo" ""] phase) ))
                         
-                        (if (== phase 2) (println (format " game %d results      player1 seed = %d random = %d    player2 seed = %d random = %d      "  gamenumber player1seed (zeroonetwo gamenumber player1seed) player2seed (zeroonetwo gamenumber player2seed))))
+                        (if (== phase 2) (println (format " game %d results      player %d random = %d    player %d random = %d      "  gamenumber player1seed player1move player2seed player2move)))
 
 
                         )
