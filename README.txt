@@ -48,6 +48,8 @@ ok now we are ready to make the game
 (defn  nextrandomnumber [x] (let [a 1664525 c 1013904223 m 4294967296] (mod (+ (* a x) c) m)))
 (defn nthrandomnumber [n x]   (if    (== n 0)   x  (nthrandomnumber (- n 1) (nextrandomnumber x))))
 (defn zeroonetwo [n x] (mod (nthrandomnumber n x) 3))
+(defn addoneandmod [x] (mod (+ 1 x) 3))
+
 
 
 (def savebeat -1)
@@ -61,7 +63,7 @@ ok now we are ready to make the game
                 (if (not (== beat savebeat))
 
                     (let [gamenumber (quot beat 4)] 
-                      (defn addoneandmod [x] (mod (+ 1 x)3))  
+                        
                         (def savebeat beat)
                         
                         (println (format " %s     "  (["ro" "sham" "bo" ""] phase) ))
