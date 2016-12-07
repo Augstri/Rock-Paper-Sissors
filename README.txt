@@ -58,9 +58,7 @@ ok now we are ready to make the game
             (let [t (System/currentTimeMillis) deltat (- t 1481135868912) beat (quot deltat 600) phase (mod beat 4)]
                 (Thread/sleep 50)
 
-                (if (== beat savebeat) 
-
-                    (print ".")
+                (if (not (== beat savebeat))
 
                     (let [] 
                         (def savebeat beat)
