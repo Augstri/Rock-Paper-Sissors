@@ -62,7 +62,7 @@ ok now we are ready to make the game
 
                     (let [] 
                         (def savebeat beat)
-                        (println (format "Current beat is %d  current phase is %d     savebeat is %d" beat phase savebeat)))
+                        (println (format " %s     "  (["ro" "sham" "bo" ""] phase) )))
                 ))))
 
 
