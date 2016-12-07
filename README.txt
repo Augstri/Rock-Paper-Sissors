@@ -49,7 +49,7 @@ ok now we are ready to make the game
 (defn nthrandomnumber [n x]   (if    (== n 0)   x  (nthrandomnumber (- n 1) (nextrandomnumber x))))
 (defn zeroonetwo [n x] (mod (nthrandomnumber n x) 3))
 (defn addoneandmod [x] (mod (+ 1 x) 3))
-
+(defn win [a b] (== a (addoneandmod b)))
 
 
 (def savebeat -1)
