@@ -26,7 +26,7 @@ to get a random number give it a starting random number:
 
 this is a function to get the nth random number
 
-(defn nthrandomnumber [n x]   (if    (== n 0)   x  (nthrandomnumber (- n 1) (nextrandomnumber x)))
+(defn nthrandomnumber [n x]   (if    (== n 0)   x  (nthrandomnumber (- n 1) (nextrandomnumber x))))
 
 
 to use it, do this:
@@ -41,3 +41,16 @@ Game number and player number produces a zero one or two
 
 
 ok now we are ready to make the game
+
+
+
+
+(defn  nextrandomnumber [x] (let [a 1664525 c 1013904223 m 4294967296] (mod (+ (* a x) c) m)))
+(defn nthrandomnumber [n x]   (if    (== n 0)   x  (nthrandomnumber (- n 1) (nextrandomnumber x))))
+(defn zeroonetwo [n x] (mod (nthrandomnumber n x) 3))
+(defn roshambo []
+    (while true
+        (do
+            (let [t (System/currentTimeMillis) deltat (- t 1481135868912) beat (quot deltat 600) phase (mod beat 4)]
+            (Thread/sleep 50)
+            (println (format "Current beat is %d  current phase is %d" beat phase ))))))
