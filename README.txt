@@ -52,7 +52,7 @@ ok now we are ready to make the game
 
 (def savebeat -1)
 
-(defn roshambo []
+(defn roshambo [player1seed player2seed]
     (while true
 
             (let [t (System/currentTimeMillis) deltat (- t 1481135868912) beat (quot deltat 600) phase (mod beat 4)]
@@ -66,7 +66,7 @@ ok now we are ready to make the game
                         
                         (println (format " %s     "  (["ro" "sham" "bo" ""] phase) ))
                         
-                        (if (== phase 2) (println (format " game %d results    "  gamenumber )))
+                        (if (== phase 2) (println (format " game %d results      player1 seed = %d    player2 seed = %d       "  gamenumber player1seed player2seed)))
 
 
                         )
