@@ -70,13 +70,16 @@ ok now we are ready to make the game
                         player2win (win player2move player1move)
                         player1rps (["rock" "paper" "sissors"] player1move)
                         player2rps (["rock" "paper" "sissors"] player2move)
+                        player1star (if player1win "*" " ")
+                        player2star (if player2win "*" " ")
+
                         ] 
                         
                         (def savebeat beat)
                         
                         (println (format " %s     "  (["ro" "sham" "bo" ""] phase) ))
                         
-                        (if (== phase 2) (println (format " game %d results      player %d %s%s    player %d %s%s      "  gamenumber player1seed player1rps "*" player2seed player2rps "*")))
+                        (if (== phase 2) (println (format " game %d results      player %d %s%s    player %d %s%s      "  gamenumber player1seed player1rps player1star player2seed player2rps player2star )))
 
 
                         )
