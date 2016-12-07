@@ -60,9 +60,16 @@ ok now we are ready to make the game
 
                 (if (not (== beat savebeat))
 
-                    (let [] 
+                    (let [gamenumber (quot beat 4)] 
+                        
                         (def savebeat beat)
-                        (println (format " %s     "  (["ro" "sham" "bo" ""] phase) )))
+                        
+                        (println (format " %s     "  (["ro" "sham" "bo" ""] phase) ))
+                        
+                        (if (== phase 2) (println (format " game %d results    "  gamenumber )))
+
+
+                        )
                 ))))
 
 
