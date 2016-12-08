@@ -57,7 +57,7 @@ ok now we are ready to make the game
 (defn roshambo [player1seed player2seed]
     (while true
 
-            (let [t (System/currentTimeMillis) deltat (- t 1481144390581) beat (quot deltat 600) phase (mod beat 4)]
+            (let [t (System/currentTimeMillis) deltat (- t 1481162593354) beat (quot deltat 600) phase (mod beat 4)]
                 (Thread/sleep 50)
 
                 (if (not (== beat savebeat))
