@@ -53,7 +53,7 @@ ok now we are ready to make the game
     (loop [n_ n x_ x] 
 
         (if (== n_ 0) 
-            x 
+            x_ 
             (recur  (- n_ 1) (nextrandomnumber x_) )
 
 )))
