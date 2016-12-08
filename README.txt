@@ -46,7 +46,19 @@ ok now we are ready to make the game
 
 
 (defn  nextrandomnumber [x] (let [a 1664525 c 1013904223 m 4294967296] (mod (+ (* a x) c) m)))
-(defn nthrandomnumber [n x]   (if    (== n 0)   x  (nthrandomnumber (- n 1) (nextrandomnumber x))))
+
+
+(defn nthrandomnumber [n x] 
+
+    (loop [n_ n x_ x] 
+
+        (if (== n_ 0) 
+            x 
+            (recur  (- n_ 1) (nextrandomnumber x_) )
+
+)))
+
+
 (defn zeroonetwo [n x] (mod (nthrandomnumber n x) 3))
 (defn addoneandmod [x] (mod (+ 1 x) 3))
 (defn win [a b] (== a (addoneandmod b)))
@@ -84,5 +96,16 @@ ok now we are ready to make the game
 
                         )
                 ))))
+
+
+
+
+
+
+
+
+
+
+
 
 
