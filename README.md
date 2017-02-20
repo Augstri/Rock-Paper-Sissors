@@ -1,19 +1,26 @@
-# Rock-Paper-Sissors
-We are going to make a game.
+# Websocekts and Server Push
 
-First install leiningen
+Simple chat app showing how to integrate [untangled-websocekts](https://github.com/untangled-web/untangled-websockets)
 
-Then on the command line enter     
+You can check out the readme for the usage of `untangled-websockets` or check out the source code here.
 
-lein
+### Running
 
+## Running Figwheel:
 
-Here is our first function, so type it into lein:
+```
+lein run -m clojure.main script/figwheel.clj
+```
 
-(defn  nextrandomnumber [x] (let [a 77 c 44 m 10] (mod (+ (* a x) c) m)))
+If the recipe has only a UI, then browse to: http://localhost:3449. If
+the recipe is full-stack, continue to the next section.
 
-to get a random number give it a starting random number:
+## Running the server:
 
-(nextrandomnumber 88)
+```
+lein run -m clojure.main
+user> (go)
+```
 
+You should now be able to see the app at: http://localhost:8080.
 
