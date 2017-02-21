@@ -48,7 +48,7 @@
 
   :profiles {
 
-             :uberjar {:main      untangled-todomvc.core
+             :uberjar {:main      app.core
                        :aot       :all
                        :prep-tasks ["compile"
                                     ["cljsbuild" "once" "production"]]

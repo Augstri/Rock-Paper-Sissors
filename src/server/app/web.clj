@@ -1,4 +1,4 @@
-(ns todomvc.web
+(ns app.web
   (:require
     [clojure.java.io :as io]
     [clojure.pprint :refer (pprint)]
@@ -6,7 +6,7 @@
     [clojure.tools.namespace.repl :refer [disable-reload! refresh clear set-refresh-dirs]]
     [com.stuartsierra.component :as component]
     [taoensso.timbre :refer [info set-level!] :as timbre]
-    [todomvc.system :as system]
+    [app.system :as system]
 ))
 
 ;;SERVER
