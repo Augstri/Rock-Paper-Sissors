@@ -34,7 +34,11 @@
   :clean-targets ^{:protect false} ["resources/public/js" "target"]
 
   :cljsbuild {:builds
-              [{:id           "dev"
+              [
+
+
+
+              {:id           "dev"
                 :source-paths ["src/client" "dev/client"]
                 :figwheel     true
                 :compiler     {:main                 cljs.user
@@ -45,7 +49,22 @@
                                :parallel-build       false
                                :verbose              false
                                :recompile-dependents true
-                               :source-map-timestamp true}}]}
+                               :source-map-timestamp true}}
+
+              {:id           "production"
+                        :source-paths ["src/client"]
+                        :compiler     {:verbose         true
+                                       :output-to       "resources/public/js/compiled/app.min.js"
+                                       :output-dir      "resources/public/js/compiled"
+                                       :pretty-print    false
+                                       :closure-defines {goog.DEBUG false}
+                                       :source-map      "resources/public/js/compiled/app.min.js.map"
+                                       :elide-asserts   true
+                                       :optimizations   :advanced}}
+
+
+
+                               ]}
 
   :figwheel {:css-dirs ["resources/public/css"]}
 
