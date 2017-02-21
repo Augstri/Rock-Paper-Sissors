@@ -3,7 +3,9 @@
   :url ""
   :license {:name "MIT"
             :url  "https://opensource.org/licenses/MIT"}
-
+  :min-lein-version "2.6.1"
+  :verbose true
+  :uberjar-name "uberjar.jar"
   :dependencies [[com.datomic/datomic-free "0.9.5206" :exclusions [joda-time]]
                  [com.taoensso/timbre "4.3.1"]
                  [commons-codec "1.10"]
@@ -43,6 +45,17 @@
                                :source-map-timestamp true}}]}
 
   :figwheel {:css-dirs ["resources/public/css"]}
+
+  :profiles {
+
+             :uberjar {:main      untangled-todomvc.core
+                       :aot       :all
+                       :prep-tasks ["compile"
+                                    ["cljsbuild" "once" "production"]]
+                      }
+
+            }
+
 
   :repl-options {:init-ns          user
                  :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
