@@ -9,7 +9,7 @@
   :dependencies [
 
                  [org.clojure/clojurescript "1.8.51"]
-                 [com.datomic/datomic-free "0.9.5206" :exclusions [joda-time]]
+                 [com.datomic/datomic-free "0.9.5206" :exclusions [joda-time com.google.guava/guava]]
                  [com.taoensso/timbre "4.3.1"]
                  [commons-codec "1.10"]
                  [org.clojure/clojure "1.8.0"]
