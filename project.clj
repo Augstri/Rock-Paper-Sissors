@@ -20,7 +20,10 @@
                  [navis/untangled-client "0.6.0" :exclusions [cljsjs/react org.omcljs/om]]
                  [navis/untangled-server "0.5.1"]
                  [navis/untangled-spec "0.3.6"]
-                 [navis/untangled-websockets "0.2.0"]]
+                 [navis/untangled-websockets "0.2.0"]
+                 [com.google.protobuf/protobuf-java "2.5.0"]
+
+                 ]
 
   :plugins [[lein-cljsbuild "1.1.3"]]
 
