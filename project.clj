@@ -20,7 +20,7 @@
                  [org.clojure/clojurescript "1.9.229"]
                  [org.omcljs/om "1.0.0-alpha46"]
                  [navis/untangled-client "0.6.1"]
-                 [navis/untangled-server "0.6.2-1" :exclusions [io.aviso/pretty org.clojure/clojurescript]]
+                 [navis/untangled-server "0.6.2" :exclusions [io.aviso/pretty org.clojure/clojurescript]]
                  [navis/untangled-datomic "0.4.11" :exclusions [org.clojure/tools.cli]]
                  [com.datomic/datomic-free "0.9.5359" :exclusions [com.google.guava/guava]]
                  [secretary "1.2.3" :exclusions [com.cemerick/clojurescript.test]]
