@@ -7,12 +7,12 @@
   :verbose true
   :uberjar-name "uberjar.jar"
   :dependencies [
-
-                 [org.clojure/clojurescript "1.8.51"]
-                 [com.datomic/datomic-free "0.9.5206" :exclusions [joda-time com.google.guava/guava]]
+                 [org.clojure/clojure "1.8.0"]
+                 [org.clojure/clojurescript "1.9.229"]
+                 [com.datomic/datomic-free "0.9.5359" :exclusions [joda-time com.google.guava/guava]]
                  [com.taoensso/timbre "4.3.1"]
                  [commons-codec "1.10"]
-                 [org.clojure/clojure "1.8.0"]
+                 
                  [org.omcljs/om "1.0.0-alpha41"]
                  [binaryage/devtools "0.5.2"]
                  [figwheel-sidecar "0.5.3" :exclusions [ring/ring-core joda-time org.clojure/tools.reader]]
