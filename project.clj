@@ -6,27 +6,38 @@
   :min-lein-version "2.6.1"
   :verbose true
   :uberjar-name "uberjar.jar"
+
+
+
+
+
+
+
+
   :dependencies [
+
                  [org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.229"]
                  [org.omcljs/om "1.0.0-alpha46"]
-
-                 [navis/untangled-client "0.6.0" :exclusions [cljsjs/react org.omcljs/om]]
-                 [navis/untangled-server "0.5.1"]
-                 [navis/untangled-spec "0.3.6"]
-                 [navis/untangled-websockets "0.2.0"]
-
-                 [com.datomic/datomic-free "0.9.5359" :exclusions [joda-time com.google.guava/guava]]
-                 [com.taoensso/timbre "4.3.1"]
+                 [navis/untangled-client "0.5.8-SNAPSHOT"]
+                 [navis/untangled-server "0.6.1" :exclusions [io.aviso/pretty org.clojure/clojurescript]]
+                 [navis/untangled-datomic "0.4.9" :exclusions [org.clojure/tools.cli]]
+                 [com.datomic/datomic-free "0.9.5359" :exclusions [com.google.guava/guava]]
+                 [secretary "1.2.3" :exclusions [com.cemerick/clojurescript.test]]
+                 [joda-time "2.9.3"]
+                 [clj-time "0.11.0"]
+                 [lein-doo "0.1.7" :scope "test" :exclusions [org.clojure/tools.reader]]
+                 [org.clojure/tools.namespace "0.2.11"]
                  [commons-codec "1.10"]
-                 
-                 
+                 [com.taoensso/timbre "4.3.1"]
+                 [com.stuartsierra/component "0.3.1"]
+                 [navis/untangled-spec "0.3.6" :scope "test"]
+                 [navis/untangled-websockets "0.2.0"]
                  [binaryage/devtools "0.5.2"]
                  [figwheel-sidecar "0.5.3" :exclusions [ring/ring-core joda-time org.clojure/tools.reader]]
                  [com.cemerick/piggieback "0.2.1"]
                  [org.clojure/tools.nrepl "0.2.12"]
                  [juxt/dirwatch "0.2.3"]
-
                  [com.google.protobuf/protobuf-java "2.5.0" :exclusions [com.google.guava/guava]]
 
                  ]
