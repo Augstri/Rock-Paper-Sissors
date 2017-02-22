@@ -32,7 +32,7 @@
                  [com.taoensso/timbre "4.3.1"]
                  [com.stuartsierra/component "0.3.1"]
                  [navis/untangled-spec "0.3.9" :scope "test"]
-                 [navis/untangled-websockets "0.3.2"]
+                 [navis/untangled-websockets "0.3.1"]
                  [binaryage/devtools "0.5.2"]
                  [figwheel-sidecar "0.5.3" :exclusions [ring/ring-core joda-time org.clojure/tools.reader]]
                  [com.cemerick/piggieback "0.2.1"]
