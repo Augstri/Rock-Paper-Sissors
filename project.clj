@@ -29,7 +29,7 @@
                  [lein-doo "0.1.7" :scope "test" :exclusions [org.clojure/tools.reader]]
                  [org.clojure/tools.namespace "0.2.11"]
                  [commons-codec "1.10"]
-                 [com.taoensso/timbre "4.3.1"]
+                 [com.taoensso/timbre "4.8.0"]
                  [com.stuartsierra/component "0.3.1"]
                  [navis/untangled-spec "0.3.9" :scope "test"]
                  [navis/untangled-websockets "0.3.1"]
