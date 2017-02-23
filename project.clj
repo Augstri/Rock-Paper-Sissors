@@ -30,7 +30,7 @@
                  [org.clojure/tools.namespace "0.2.11"]
                  [commons-codec "1.10"]
                  [com.taoensso/timbre "4.8.0"]
-                 [com.stuartsierra/component "0.3.1"]
+                 [com.stuartsierra/component "0.3.2"]
                  [navis/untangled-spec "0.3.9" :scope "test"]
                  [navis/untangled-websockets "0.3.1"]
                  [binaryage/devtools "0.5.2"]
