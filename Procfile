@@ -1,1 +1,1 @@
-web: echo "GOOOFUS!!!";java $JVM_OPTS -Dconfig=config/prod.edn -cp target/uberjar.jar clojure.main -m app.web
+web: echo "GOOOFUS!!!";tar tf target/uberjar.jar;java $JVM_OPTS -Dconfig=config/prod.edn -cp target/uberjar.jar clojure.main -m app.web
