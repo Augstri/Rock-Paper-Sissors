@@ -13,6 +13,8 @@
 
   :dependencies [
 
+                 [com.stuartsierra/component "0.3.1"]
+
                  [com.datomic/datomic-free "0.9.5206" :exclusions [joda-time com.google.guava/guava]]
                  [com.taoensso/timbre "4.3.1"]
                  [commons-codec "1.10"]
@@ -28,7 +30,6 @@
                  [navis/untangled-server "0.5.1"]
                  [navis/untangled-spec "0.3.6"]
                  [navis/untangled-websockets "0.2.0"]
-                 [com.stuartsierra/component "0.3.1"]
 
                  ]
 
