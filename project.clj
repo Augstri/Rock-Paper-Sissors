@@ -28,6 +28,7 @@
                  [navis/untangled-server "0.5.1"]
                  [navis/untangled-spec "0.3.6"]
                  [navis/untangled-websockets "0.2.0"]
+                 [com.stuartsierra/component "0.3.1"]
 
                  ]
 
