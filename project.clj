@@ -13,6 +13,7 @@
 
   :dependencies [
 
+                 [navis/untangled-client "0.6.0" :exclusions [cljsjs/react org.omcljs/om]]
                  [com.datomic/datomic-free "0.9.5206" :exclusions [joda-time com.google.guava/guava]]
                  [com.taoensso/timbre "4.3.1"]
                  [commons-codec "1.10"]
@@ -24,7 +25,6 @@
                  [com.cemerick/piggieback "0.2.1"]
                  [org.clojure/tools.nrepl "0.2.12"]
                  [juxt/dirwatch "0.2.3"]
-                 [navis/untangled-client "0.6.0" :exclusions [cljsjs/react org.omcljs/om]]
                  [navis/untangled-server "0.5.1"]
                  [navis/untangled-spec "0.3.6"]
                  [navis/untangled-websockets "0.2.0"]
