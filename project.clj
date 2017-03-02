@@ -58,6 +58,11 @@
                                :recompile-dependents true
                                :source-map-timestamp true}}
 
+
+
+
+
+
               {:id           "production"
                         :source-paths ["src/client"]
                         :compiler     {:verbose         true
@@ -78,12 +83,6 @@
 
   :profiles {
 
-             :uberjar {:main      app.core
-                       :aot       :all
-                       :prep-tasks ["compile"
-                                    ["cljsbuild" "once" "production"]]
-                      }
-
              :dev {
                    :source-paths ["dev/server" "src/server"]
                    :repl-options {
@@ -98,8 +97,11 @@
                                   [com.cemerick/piggieback "0.2.1"]
                                   [org.clojure/tools.nrepl "0.2.12"]]}
 
-            }
+             :uberjar {:main      app.core
+                       :aot       :all
+                       :prep-tasks ["compile"
+                                    ["cljsbuild" "once" "production"]]
+                      }
 
-  :repl-options {:init-ns          user
-                 :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
+            }
 )
