@@ -43,21 +43,6 @@
   :cljsbuild {:builds
               [
 
-
-
-              {:id           "dev"
-                :source-paths ["src/client" "dev/client"]
-                :figwheel     true
-                :compiler     {:main                 cljs.user
-                               :asset-path           "js/compiled/dev"
-                               :output-to            "resources/public/js/compiled/app.js"
-                               :output-dir           "resources/public/js/compiled/dev"
-                               :optimizations        :none
-                               :parallel-build       false
-                               :verbose              false
-                               :recompile-dependents true
-                               :source-map-timestamp true}}
-
               {:id           "production"
                         :source-paths ["src/client"]
                         :compiler     {:verbose         true
@@ -73,8 +58,6 @@
 
                                ]}
 
-  :figwheel {:css-dirs    ["resources/public/css"]
-             :server-port 2345}
 
   :profiles {
 
