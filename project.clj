@@ -3,7 +3,7 @@
   :url ""
   :license {:name "MIT"
             :url  "https://opensource.org/licenses/MIT"}
-  :min-lein-version "2.6.1"
+  :min-lein-version "2.7.0"
   :verbose true
   :uberjar-name "uberjar.jar"
 
