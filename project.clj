@@ -46,9 +46,9 @@
 
 
               {:id           "dev"
-                :source-paths ["src/client" "dev/client"]
+                :source-paths ["dev/client" "src/client"]
                 :figwheel     true
-                :compiler     {:main                 cljs.user
+                :compiler     {:main                 "cljs.user"
                                :asset-path           "js/compiled/dev"
                                :output-to            "resources/public/js/compiled/app.js"
                                :output-dir           "resources/public/js/compiled/dev"
