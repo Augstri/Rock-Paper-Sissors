@@ -86,7 +86,4 @@
 
             }
 
-
-  :repl-options {:init-ns          user
-                 :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 )
